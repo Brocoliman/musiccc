@@ -17,3 +17,14 @@ form.d-flex .btn-outline-light:hover {
   background-color: #495057; /* Darker background color on hover */
   border-color: #6c757d; /* Border color on hover */
 }
+
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport height */
+    background-image: url('./images/bkg/music1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
