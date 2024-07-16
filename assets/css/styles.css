@@ -1,21 +1,31 @@
-form.d-flex .form-control {
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 40px;
   border-radius: 50px;
-  background-color: #343a40; /* Dark background color */
-  color: white; /* White text color */
-  border: 1px solid #495057; /* Border color matching the theme */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
 }
-form.d-flex .form-control::placeholder {
-  color: #ced4da; /* Placeholder text color */
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
-form.d-flex .btn-outline-light {
-  background-color: #343a40; /* Dark background color */
-  color: white; /* White text color */
-  border-color: #495057; /* Border color */
+
+.search-icon {
+  background: url('https://cdn-icons-png.flaticon.com/512/54/54481.png') no-repeat center;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
 }
-form.d-flex .btn-outline-light:hover {
-  background-color: #495057; /* Darker background color on hover */
-  border-color: #6c757d; /* Border color on hover */
+
+#searchIcon {
+  filter: invert(100%);
 }
 
 .hero {
@@ -23,7 +33,8 @@ form.d-flex .btn-outline-light:hover {
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport height */
     background: url('../../images/bkg/music1.jpg') no-repeat center center/cover;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
