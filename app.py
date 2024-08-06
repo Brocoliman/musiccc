@@ -1,12 +1,4 @@
-from flask import (
-    Flask,
-    make_response,
-    render_template,
-    request,
-    redirect,
-    url_for,
-    abort,
-)
+from flask import Flask, make_response, render_template, request, redirect, url_for, abort
 
 def create_app():
     app = Flask(__name__)
@@ -25,3 +17,6 @@ def about():
 @app.route("/playlists")
 def playlists():
     return render_template("playlists.html")
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1')
