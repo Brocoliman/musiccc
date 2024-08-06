@@ -3864,11 +3864,13 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
 .hero {
   padding-top: 22vh; /* Default navbar height */
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport height */
+  background: url('/static/images/bkg/music1.jpg');
 }
-
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
